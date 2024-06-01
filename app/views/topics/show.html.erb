@@ -34,7 +34,7 @@
   <%= server_plugin_outlet "topic_header" %>
 
   <%- if include_crawler_content? %>
-    <div itemscope itemtype='http://schema.org/DiscussionForumPosting'>
+    <div itemscope itemtype=''>
       <meta itemprop='headline' content='<%= @topic_view.title %>'>
       <link itemprop='url' href='<%= @topic_view.absolute_url %>'>
       <meta itemprop='datePublished' content='<%= @topic_view.topic.created_at.to_formatted_s(:iso8601) %>'>
